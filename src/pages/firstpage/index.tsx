@@ -8,8 +8,14 @@ const FirstPage = () => {
     <PageLayout title="Перша сторінка">
       {FirstPageData.map((object) => {
         return (
-          <Card title={object.title} buttonText={object.buttonname}>
-            <div class="description">{object.list.join(", ")}</div>
+          <Card title={object.title} buttonText={object.buttonName}>
+            <div className="description">
+              <ul>
+                {object.list.map(item => {
+                  <li>{item}</li>
+                })}
+              </ul>
+            </div>
           </Card>
         );
       })}

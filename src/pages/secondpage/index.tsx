@@ -1,15 +1,17 @@
 import PageLayout from "../../layouts/page";
 import { useState } from "react";
-import FirstPageData from "../../fixtures/firstPage.json";
+import SecondPageData from "../../fixtures/secondPage.json";
 import Card from "../../components/Card";
 
 const SecondPage = () => {
   return (
-    <PageLayout title="Перша сторінка">
-      {FirstPageData.map((object) => {
+    <PageLayout title="Друга сторінка">
+      {SecondPageData.map((object) => {
         return (
-          <Card title={object.title} buttonText={object.buttonname}>
-            <div class="description">{object.list.join(", ")}</div>
+          <Card title={object.title} buttonText={object.buttonName}>
+            <div className="description">
+              <img src={object.img} />
+            </div>
           </Card>
         );
       })}
