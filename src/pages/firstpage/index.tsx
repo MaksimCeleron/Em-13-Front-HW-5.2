@@ -1,7 +1,7 @@
 import PageLayout from "../../layouts/page"
 import { useState } from "react";
-import FirstPageData from './fixtures/firstPage.json'
-import Card from './components/Card'
+import FirstPageData from '../../fixtures/firstPage.json'
+import Card from '../../components/Card'
 
 const FirstPage = () =>{
   return (
