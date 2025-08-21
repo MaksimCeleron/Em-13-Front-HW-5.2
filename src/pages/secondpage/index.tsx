@@ -10,7 +10,11 @@ const SecondPage = () => {
         return (
           <Card title={object.title} buttonText={object.buttonName}>
             <div className="description">
-              <img src={object.img} />
+              <img 
+                src={object.img} 
+                alt="опис картинки" 
+                style={{ maxWidth: "100%", display: "block" }}
+              />
             </div>
           </Card>
         );
