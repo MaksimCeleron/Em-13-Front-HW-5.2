@@ -13,7 +13,7 @@ const Card = (title: string, buttonText: string, children: ReactNode) => {
       <button>
         {buttonText}
       </button>
-  </div>
+    </div>
   );
 };
 
