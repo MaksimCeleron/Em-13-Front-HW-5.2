@@ -12,7 +12,7 @@ const FirstPage = () => {
             <div className="description">
               <ul>
                 {object.list.map(item => {
-                  <li>{item}</li>
+                  return <li>{item}</li>;
                 })}
               </ul>
             </div>
