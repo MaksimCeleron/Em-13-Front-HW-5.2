@@ -5,7 +5,9 @@ import PageLayout from './layouts/page'
 function App() {
   return (
     <>
-      <PageLayout title="Головна сторінка" />
+      <PageLayout title="Головна сторінка">
+        <p>Вітаю на моєму сайті!</p>
+      </PageLayout>
     </>
   )
 }
