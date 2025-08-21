@@ -6,11 +6,13 @@ import Card from './components/Card'
 const FirstPage = () =>{
   return (
     <PageLayout title="Перша сторінка">
-      FirstPageData.map(object => {
-        <Card title={object.title} buttonText={object.buttonname}>
-          <div class="description">{object.list.join(' ')}</div>
-        </Card>
-      })
+      {FirstPageData.map(object => {
+        return (
+          <Card title={object.title} buttonText={object.buttonname}>
+            <div class="description">{object.list.join(' ')}</div>
+          </Card>
+        )
+      })}
     </PageLayout>
   )
 }
