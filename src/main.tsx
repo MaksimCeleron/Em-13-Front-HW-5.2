@@ -1,13 +1,13 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import FirstPage from './pages/firstpage/index.tsx';
-import SecondPage from './pages/secondpage/index.tsx';
-import ThirdPage from './pages/thirdpage/index.tsx';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.tsx";
+import { BrowserRouter, Route, Routes } from "react-router";
+import FirstPage from "./pages/firstpage";
+import SecondPage from "./pages/secondpage";
+import ThirdPage from "./pages/thirdpage";
 
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
@@ -17,5 +17,5 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/thirdpage" element={<ThirdPage />} />
       </Routes>
     </BrowserRouter>
-  </StrictMode>,
-)
+  </StrictMode>
+);
