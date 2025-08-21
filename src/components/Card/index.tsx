@@ -1,7 +1,13 @@
 import React, { ReactNode } from 'react';
 import "./style.css";
 
-const Card = (title: string, buttonText: string, children: ReactNode) => {
+interface CardProps {
+  title: string;
+  buttonText: string;
+  children: ReactNode;
+}
+
+const Card: React.FC<CardProps> = ({ title, buttonText, children }) => {
   return (
     <div className="card">
       <div className="content">
