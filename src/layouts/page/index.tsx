@@ -6,9 +6,9 @@ const PageLayout = ({title, children} : {title:string, children:React.ReactNode}
       <header className="header">
         <ul>
           <li><a href="/">Головна</a></li>
-            <li><a href="/firstpage">Сторінка 1</a></li>
-            <li><a href="/secondpage">Сторінка 2</a></li>
-            <li><a href="/thirdpage">Сторінка 3</a></li>
+          <li><a href="/firstpage">Сторінка 1</a></li>
+          <li><a href="/secondpage">Сторінка 2</a></li>
+          <li><a href="/thirdpage">Сторінка 3</a></li>
         </ul>
       </header>
       <main className="content">
