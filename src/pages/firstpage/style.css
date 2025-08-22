@@ -1,4 +1,10 @@
 .container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  flex: 1 1 calc(25% - 10px);
+  box-sizing: border-box;
 }
