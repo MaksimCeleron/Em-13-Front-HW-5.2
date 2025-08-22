@@ -50,6 +50,18 @@ html, body {
     padding: 20px;
 }
 
+.content.five-columns .card {
+    flex-basis: calc(20% - 20px);
+}
+
+.content.four-columns .card {
+    flex-basis: calc(25% - 20px);
+}
+
+.content.three-columns .card {
+    flex-basis: calc(33.33% - 20px);
+}
+
 .footer {
     background: #333;
     color: white;
