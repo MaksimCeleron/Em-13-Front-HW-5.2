@@ -6,19 +6,21 @@ import Card from "../../components/Card";
 const FirstPage = () => {
   return (
     <PageLayout title="Перша сторінка">
-      {FirstPageData.map((object) => {
-        return (
-          <Card title={object.title} buttonText={object.buttonName}>
-            <div className="description">
-              <ul>
-                {object.list.map(item => {
-                  return <li>{item}</li>;
-                })}
-              </ul>
-            </div>
-          </Card>
-        );
-      })}
+      <ScrollView>
+        {FirstPageData.map((object) => {
+          return (
+            <Card title={object.title} buttonText={object.buttonName}>
+              <div className="description">
+                <ul>
+                  {object.list.map(item => {
+                    return <li>{item}</li>;
+                  })}
+                </ul>
+              </div>
+            </Card>
+          );
+        })}
+      </ScrollView>
     </PageLayout>
   );
 };
