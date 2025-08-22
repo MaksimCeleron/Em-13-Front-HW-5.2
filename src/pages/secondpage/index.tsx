@@ -2,6 +2,7 @@ import PageLayout from "../../layouts/page";
 import { useState } from "react";
 import SecondPageData from "../../fixtures/secondPage.json";
 import Card from "../../components/Card";
+import './style.css';
 
 const SecondPage = () => {
   return (

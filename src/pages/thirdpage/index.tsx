@@ -2,6 +2,7 @@ import PageLayout from "../../layouts/page";
 import { useState } from "react";
 import ThirdPageData from "../../fixtures/thirdPage.json";
 import Card from "../../components/Card";
+import './style.css';
 
 const ThirdPage = () => {
   return (

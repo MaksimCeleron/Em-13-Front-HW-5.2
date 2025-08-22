@@ -2,6 +2,7 @@ import PageLayout from "../../layouts/page";
 import { useState } from "react";
 import FirstPageData from "../../fixtures/firstPage.json";
 import Card from "../../components/Card";
+import './style.css';
 
 const FirstPage = () => {
   return (
