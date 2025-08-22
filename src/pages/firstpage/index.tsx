@@ -2,11 +2,12 @@ import PageLayout from "../../layouts/page";
 import { useState } from "react";
 import FirstPageData from "../../fixtures/firstPage.json";
 import Card from "../../components/Card";
+import './styles.css'
 
 const FirstPage = () => {
   return (
     <PageLayout title="Перша сторінка">
-      <div className="content five-columns">
+      <div className="five-columns">
         {FirstPageData.map((object) => {
           return (
             <Card title={object.title} buttonText={object.buttonName}>
