@@ -24,7 +24,7 @@ html, body {
     width: 100%;
     background: #1e1e1e;
     padding: 14px 20px;
-    height: 300px;
+    margin: 0;
 }
 
 .nav ul {
@@ -56,4 +56,5 @@ html, body {
     color: white;
     text-align: center;
     padding: 10px;
+    margin: 0;
 }
