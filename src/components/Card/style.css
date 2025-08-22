@@ -1,6 +1,4 @@
 .card {
-  overflow-y: auto;
-  
   flex-grow: 1;
   margin: 25px;
   display: flex;
