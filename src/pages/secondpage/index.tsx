@@ -8,11 +8,11 @@ const SecondPage = () => {
   return (
     <PageLayout title="Друга сторінка">
       <div className="container">
-        {SecondPageData.map((item, index) => {
+        {SecondPageData.map((object) => {
           return (
-            <Card key={index} title={item.title} buttonText={item.buttonName}>
+            <Card title={object.title} buttonText={object.buttonName}>
               <div className="description">
-                <img src={item.img} />
+                <img src={object.img} />
               </div>
             </Card>
           );
