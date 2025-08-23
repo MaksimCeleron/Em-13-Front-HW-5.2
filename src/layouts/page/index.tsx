@@ -3,7 +3,7 @@ import './style.css'
 const PageLayout = ({title, children} : {title:string, children:React.ReactNode}) =>{
   return (
     <div className="wrapper">
-      <header className="header">
+      <header className="container header">
         <div className="nav">
           <ul>
             <li><a href="/">Головна</a></li>
@@ -13,11 +13,11 @@ const PageLayout = ({title, children} : {title:string, children:React.ReactNode}
           </ul>
         </div>
       </header>
-      <main className="content">
+      <main className="container content">
         <h1>{title}</h1>
         {children}
       </main>
-      <footer className="footer">
+      <footer className="container footer">
         MaksimCeleron 2025
       </footer>
     </div>
