@@ -1,4 +1,4 @@
-.first-page container {
+.first-page .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }

@@ -11,17 +11,15 @@ const FirstPage = () => {
         <div className="container">
           {FirstPageData.map((object) => {
             return (
-              <div className="card-wrapper">
-                <Card title={object.title} buttonText={object.buttonName}>
-                  <div className="description">
-                    <ul>
-                      {object.list.map(item => {
-                        return <li>{item}</li>;
-                      })}
-                    </ul>
-                  </div>
-                </Card>
-              </div>
+              <Card title={object.title} buttonText={object.buttonName}>
+                <div className="description">
+                  <ul>
+                    {object.list.map(item => {
+                      return <li>{item}</li>;
+                    })}
+                  </ul>
+                </div>
+              </Card>
             );
           })}
         </div>
