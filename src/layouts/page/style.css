@@ -6,12 +6,10 @@
 
 .wrapper {
     display: grid;
-    grid-template-columns: minmax(auto, 1200px);
-    justify-content: center;
+    grid-template-columns: 1fr;
     /*grid-template-columns: 1fr;
     display: flex;
     flex-direction: column;*/
-    min-height: 100vh;
 }
 
 body {
@@ -22,6 +20,7 @@ body {
 }
 
 .content {
+    min-height: 100vh;
     flex-grow: 1;
 }
 
