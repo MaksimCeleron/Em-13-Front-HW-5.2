@@ -7,16 +7,18 @@ import '../../pages/secondpage/style.css';
 const SecondPage = () => {
   return (
     <PageLayout title="Друга сторінка">
-      <div className="container">
-        {SecondPageData.map((object) => {
-          return (
-            <Card title={object.title} buttonText={object.buttonName}>
-              <div className="description">
-                <img src={object.img} />
-              </div>
-            </Card>
-          );
-        })}
+      <div className="second-page">
+        <div className="container">
+          {SecondPageData.map((object) => {
+            return (
+              <Card title={object.title} buttonText={object.buttonName}>
+                <div className="description">
+                  <img src={object.img} />
+                </div>
+              </Card>
+            );
+          })}
+        </div>
       </div>
     </PageLayout>
   );

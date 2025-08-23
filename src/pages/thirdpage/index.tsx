@@ -7,15 +7,17 @@ import './style.css';
 const ThirdPage = () => {
   return (
     <PageLayout title="Третя сторінка">
-      <div className="container">
-        {ThirdPageData.map((object) => {
-          return (
-            <Card title={object.title} buttonText={object.buttonName}>
-              <div className="price">${object.price}</div>
-              <div className="description">{object.description}</div>
-            </Card>
-          );
-        })}
+      <div className="third-page">
+        <div className="container">
+          {ThirdPageData.map((object) => {
+            return (
+              <Card title={object.title} buttonText={object.buttonName}>
+                <div className="price">${object.price}</div>
+                <div className="description">{object.description}</div>
+              </Card>
+            );
+          })}
+        </div>
       </div>
     </PageLayout>
   );
